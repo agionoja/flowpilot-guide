@@ -25,15 +25,19 @@ chose. You write a list of prompts once; FlowPilot does the clicking.
 
 ## Install
 
-1. Download the latest `flowpilot-vX.Y.Z.zip` from the releases page and unzip it.
-2. Open `chrome://extensions`, turn on **Developer mode** (top right), click **Load unpacked**
-   and choose the unzipped folder.
-3. Pin FlowPilot and click its icon to open the side panel.
-4. **Sign in with Google** in the panel for unlimited prompts. Without signing in you get 10
+FlowPilot is not publicly available yet. It will be published on the **Chrome Web Store**;
+this guide will link to it then.
+
+If you were given a FlowPilot build:
+
+1. Unzip it, open `chrome://extensions`, turn on **Developer mode** (top right), click
+   **Load unpacked** and choose the unzipped folder.
+2. Pin FlowPilot and click its icon to open the side panel.
+3. **Sign in with Google** in the panel for unlimited prompts. Without signing in you get 10
    prompts per day.
 
-When a new version is released, the panel tells you. Download the new zip, replace the folder,
-and click **reload ↻** on FlowPilot in `chrome://extensions`, then refresh the Flow tab.
+After installing a newer build, click **reload ↻** on FlowPilot in `chrome://extensions`, then
+refresh the Flow tab.
 
 ## Quick start
 
@@ -238,7 +242,7 @@ Common mistakes FlowPilot rejects or mishandles:
 | "We noticed unusual activity" (in Flow) | Flow is rate-limiting your account. | Lower Concurrent Prompts; use one browser. |
 | "You're out of Google Flow credits" (in Flow) | Flow refuses generations. | Wait for credits or upgrade Flow. |
 | The panel stops accepting typing (buttons still work) | A browser glitch. | Quit Chrome fully (⋮ → Exit) and reopen. |
-| "Manual Update Extension Required" | A newer FlowPilot exists. | Install the new zip; if you already did, click reload ↻. |
+| "Manual Update Extension Required" | A newer FlowPilot exists. | Install the newer build; if you already did, click reload ↻. |
 
 ## Known limitations
 
