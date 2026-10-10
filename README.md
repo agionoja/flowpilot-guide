@@ -219,9 +219,11 @@ Common mistakes FlowPilot rejects or mishandles:
   work; they make Flow throttle you.
 - **Don't click pictures in Flow while a run is typing.** A click opens Flow's editor. FlowPilot
   leaves the editor by itself, but a prompt typed into the editor fails and is retried.
-- **Keep the Flow window visible**, or Chrome pauses the page in the background. On a hidden
-  window or another desktop, start Chrome with
-  `--disable-backgrounding-occluded-windows --disable-renderer-backgrounding --disable-background-timer-throttling`.
+- **Working in other windows? Use background mode.** Chrome pauses the Flow page when it isn't
+  on screen. Click **Enable background mode** (under Run), choose **Chrome Tab**, pick the **Flow**
+  tab and press **Share**. Chrome shows a "sharing this tab" bar; nothing is recorded or sent.
+  Keep the FlowPilot panel open. It switches off by itself 1 minute after all runs and downloads
+  finish, and asks again on your next Run.
 - **Use only one automation extension at a time** for Flow (two extensions that rename downloads
   interfere with each other).
 - After reloading the extension, **refresh the Flow tab** before pressing Run.
@@ -241,7 +243,7 @@ Common mistakes FlowPilot rejects or mishandles:
 | "Couldn't leave Flow's editor" | The editor didn't close. | Click Flow's back arrow and refresh. |
 | "We noticed unusual activity" (in Flow) | Flow is rate-limiting your account. | Lower Concurrent Prompts; use one browser. |
 | "You're out of Google Flow credits" (in Flow) | Flow refuses generations. | Wait for credits or upgrade Flow. |
-| The panel stops accepting typing (buttons still work) | A browser glitch. | Quit Chrome fully (⋮ → Exit) and reopen. |
+| Runs stall while Flow isn't on screen | Chrome pauses hidden tabs. | Use background mode (see Tips). |
 | "Manual Update Extension Required" | A newer FlowPilot exists. | Install the newer build; if you already did, click reload ↻. |
 
 ## Known limitations
